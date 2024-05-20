@@ -3,10 +3,10 @@
 # Title
 
 # Members
-> 김도현: 역할 /
-> 김준환: 역할 /
-> 심준용: 역할 / wnsdyd029451@gmail.com
-> 안성우: 역할 / 
+## 김도현: 역할 /
+## 김준환: 역할 /
+## 심준용: 역할 / wnsdyd029451@gmail.com
+## 안성우: 역할 / 
 
 # I. Proposal
 > Motivation: Why are you doing this?
