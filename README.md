@@ -28,14 +28,19 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k의 이미지
 > **Baked Potato**, **Crispy Chicken**, **Donut**, **Fries**, **Hot     Dog**, **Sandwich**, **Taco**, **Taquito**, **apple_pie**, **buger**, **butter_naan**, **chai**, **chapati**, **cheesecake**, **chicken_curry**, **chole-bhature**, **dal_makhani**, **dhokla**, **fried_rice**, **ice_cream**, **idli**, **jalebi**, **kaathi_rolls**, **kadai_paneer**, **kulfi**, **masala_dosa**, **momos**, **omelette**, **paani_puri**, **pakode**
 
 # III. Methodology
-> Explaining your choice of algorithms (methods)
-> Explaining features (if any)
+### Explaining your choice of algorithms (methods)
+
+### Explaining features (if any)
 
 # IV. Evaluation & Analysis
-> Graphs, tables, any statistics (if any)
+### Graphs, tables, any statistics (if any)
 
 # V. Related Works (e.g., existing studies)
-> Tools, libraries, blogs, or any documentation that you have used to to this project.
+### Tools, libraries, blogs, or any documentation that you have used to to this project.
+**Tool**:
 
+**Library**: **PyTorch**(troch, torchvision)
+
+**Blog**: **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset)(Dataset)
 # VI. Conclusion: Discussion
 
