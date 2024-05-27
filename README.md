@@ -41,6 +41,6 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k의 이미지
 
 **Library**: **PyTorch**(troch, torchvision)
 
-**Blog**: **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset)(Dataset)
+**Blog**: **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset) **(Dataset)**
 # VI. Conclusion: Discussion
 
