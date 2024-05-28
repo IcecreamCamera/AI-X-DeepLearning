@@ -5,28 +5,31 @@ import torch.nn.functional as F
 from tqdm import tqdm
 
 from utils import compute_acc
+from visualization import save_loss_graph, save_acc_graph
 
 
-def train(model, args, dataloader, optim, lr_scheduler=None, criterion=nn.CrossEntropyLoss):
+def train(model, args, train_dataloader, optim, val_dataloader=None, lr_scheduler=None, criterion=nn.CrossEntropyLoss):
     if not os.path.exists("checkpoint"):
         os.mkdir("checkpoint")
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model.to(device)
 
-    model.train()
-    for epoch in range(args.epoch):
-        epoch_acc, epoch_loss = [], []
+    max_val_acc = 0.0
+    train_acc, train_loss = [], []
+    val_acc, val_loss = [], []
 
-        for data, label in tqdm(dataloader):
+    for epoch in range(args.epoch):
+        model.train()
+        train_epoch_acc, train_epoch_loss = [], []
+        for data, label in tqdm(train_dataloader):
             data, label = data.to(device), label.to(device)
-            
             pred = model(data)
             acc = compute_acc(pred, label)
             loss = criterion(pred, label)
             
-            epoch_acc.append(acc)
-            epoch_loss.append(loss)
+            train_epoch_acc.append(acc)
+            train_epoch_loss.append(loss)
 
             optim.zero_grad()
             loss.backward()
@@ -35,9 +38,40 @@ def train(model, args, dataloader, optim, lr_scheduler=None, criterion=nn.CrossE
         if lr_scheduler:
             lr_scheduler.step()
 
-        epoch_acc = torch.stack(epoch_acc).mean().item()
-        epoch_loss = torch.stack(epoch_loss).mean().item()
-        print(f"Epoch {epoch}/{args.epoch}  accuracy: {epoch_acc}, loss: {epoch_loss}\n")
+        train_epoch_acc = torch.stack(train_epoch_acc).mean().item()
+        train_epoch_loss = torch.stack(train_epoch_loss).mean().item()
+        print(f"Epoch {epoch+1}/{args.epoch}  train accuracy: {train_epoch_acc}  train loss: {train_epoch_loss}")
 
+        train_acc.append(train_epoch_acc)
+        train_loss.append(train_epoch_loss)
+
+        if val_dataloader:
+            model.eval()
+            val_epoch_acc, val_epoch_loss = [], []
+            with torch.no_grad():
+                for data, label in val_dataloader:
+                    data, label = data.to(device), label.to(device)
+                    pred = model(data)
+                    acc = compute_acc(pred, label)
+                    loss = criterion(pred, label)
+
+                    val_epoch_acc.append(acc)
+                    val_epoch_loss.append(loss)
+            
+            val_epoch_acc = torch.stack(val_epoch_acc).mean().item()
+            val_epoch_loss = torch.stack(val_epoch_loss).mean().item()
+            print(f"Epoch {epoch+1}/{args.epoch}  val accuracy: {val_epoch_acc}  val loss: {val_epoch_loss}")
+
+            val_acc.append(val_epoch_acc)
+            val_loss.append(val_epoch_loss)
+                
         if (epoch + 1) % 5 == 0:
-            torch.save(model.state_dict(), f"checkpoint/model{epoch+1}.pth")
+            torch.save(model.state_dict(), f"checkpoint/{args.model_name}{epoch+1}.pth")
+        
+        if val_epoch_acc > max_val_acc:
+            torch.save(model.state_dict(), f"checkpoint/{args.model_name}_maxval.pth")
+            max_val_acc = val_epoch_acc
+
+    save_acc_graph(train_acc, val_acc)
+    save_loss_graph(train_loss, val_loss)
+    
