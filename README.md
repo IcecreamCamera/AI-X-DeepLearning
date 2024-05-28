@@ -39,7 +39,8 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 테스트 세트(Test Set): 15%
 
-<center><img width="100%" alt="image" src="./images/imgs.png"></center>  <br>
+<center><img width="100%" alt="image" src="./images/imgs.png"></center>
+<center><img width="100%" alt="image" src="./images/class_distribution.png"></center>
 
 Train set: 70% Validation: 15% Test: 15%
 # III. Methodology
@@ -49,6 +50,9 @@ Train set: 70% Validation: 15% Test: 15%
 
 # IV. Evaluation & Analysis
 ### Graphs, tables, any statistics (if any)
+<center><img width="100%" alt="image" src="./images/accuracy_graph.png"></center>
+<center><img width="100%" alt="image" src="./images/loss_graph.png"></center>
+
 
 # V. Related Works (e.g., existing studies)
 ### Tools, libraries, blogs, or any documentation that you have used to to this project.
