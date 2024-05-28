@@ -27,6 +27,8 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k의 이미지
 ### (class) 
 > **Baked Potato**, **Crispy Chicken**, **Donut**, **Fries**, **Hot     Dog**, **Sandwich**, **Taco**, **Taquito**, **apple_pie**, **buger**, **butter_naan**, **chai**, **chapati**, **cheesecake**, **chicken_curry**, **chole-bhature**, **dal_makhani**, **dhokla**, **fried_rice**, **ice_cream**, **idli**, **jalebi**, **kaathi_rolls**, **kadai_paneer**, **kulfi**, **masala_dosa**, **momos**, **omelette**, **paani_puri**, **pakode**
 
+![KakaoTalk_20240528_002704005_04](https://github.com/IcecreamCamera/AI-X-DeepLearning/assets/165820265/1098edc9-4f9d-4a00-86ce-fad4620ae2bd)
+
 # III. Methodology
 ### Explaining your choice of algorithms (methods)
 
