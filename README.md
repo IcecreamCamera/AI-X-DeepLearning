@@ -49,8 +49,11 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k의 이미지
 **Blog**: **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset) **(Dataset)**
 
 **Paper**: Deep Residual Learning for Image Recognition (https://arxiv.org/pdf/1512.03385)
+
 Learning Deep Features for Discriminative Localization (https://arxiv.org/pdf/1512.04150)
+
 EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (https://arxiv.org/pdf/1905.11946)
+
 Very Deep Convolutional Networks for Large-Scale Image Recognitio (https://arxiv.org/pdf/1409.1556)
 
 
