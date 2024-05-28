@@ -54,8 +54,8 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 ### Graphs, tables, any statistics (if any)
 
 <p align="center">
-    <img width="50%" alt="image" src="./images/accuracy_graph.png">
-    <img width="50%" alt="image" src="./images/loss_graph.png">
+    <img width="45%" alt="image" src="./images/accuracy_graph.png">
+    <img width="45%" alt="image" src="./images/loss_graph.png">
 </p>
 
 # V. Related Works (e.g., existing studies)
