@@ -42,7 +42,6 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 테스트 세트(Test Set): 15%
 
-<center><img width="100%" alt="image" src="./images/imgs.png"></center>
 <center><img width="100%" alt="image" src="./images/class_distribution.png"></center>
 
 # III. Methodology
