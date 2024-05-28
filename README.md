@@ -33,7 +33,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 <center><img width="100%" alt="image" src="./images/imgs.png"></center>  <br>
 
-데이터셋을 훈련, 검증, 테스트 세트로 나누는 것은 하이퍼 파라미터를 조정하여 모델의 성능을 효과적으로 평가하고 과적합을 방지하기 위한 중요한 단계입니다.
+데이터셋을 훈련, 검증, 테스트 세트로 나누는 것은 하이퍼 파라미터를 조정하여 모델의 성능을 효과적으로 평가하고 과적합을 방지하기 위한 중요한 단계이다.
 
 
 훈련 세트(Train Set):70%
@@ -43,7 +43,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 테스트 세트(Test Set): 15%
 
 <br>
-데이터셋의 클래스 분포는 다음과 같습니다.
+데이터셋의 클래스 분포는 다음과 같다.
 <center><img width="100%" alt="image" src="./images/class_distribution.png"></center>
 
 
