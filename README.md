@@ -30,8 +30,18 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 ### (class) 
 > **Baked Potato**, **Crispy Chicken**, **Donut**, **Fries**, **Hot     Dog**, **Sandwich**, **Taco**, **Taquito**, **apple_pie**, **buger**, **butter_naan**, **chai**, **chapati**, **cheesecake**, **chicken_curry**, **chole-bhature**, **dal_makhani**, **dhokla**, **fried_rice**, **ice_cream**, **idli**, **jalebi**, **kaathi_rolls**, **kadai_paneer**, **kulfi**, **masala_dosa**, **momos**, **omelette**, **paani_puri**, **pakode**, **pav_bhaji**, **pizza**, **samosa**, **shushi**
 
+
+데이터셋을 훈련, 검증, 테스트 세트로 나누는 것은 하이퍼 파라미터를 조정하여 모델의 성능을 효과적으로 평가하고 과적합을 방지하기 위한 중요한 단계입니다.
+
+훈련 세트(Train Set):70%
+
+검증 세트(Validation Set): 15%
+
+테스트 세트(Test Set): 15%
+
 <center><img width="100%" alt="image" src="./images/imgs.png"></center>  <br>
 
+Train set: 70% Validation: 15% Test: 15%
 # III. Methodology
 ### Explaining your choice of algorithms (methods)
 
