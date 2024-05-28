@@ -5,10 +5,10 @@
 ## ResNet을 이용한 음식 이미지 분류 및 실사용 예제
 
 # Members
-### 김도현: 역할 /
-### 김준환: 역할 /
-### 심준용: 역할 / wnsdyd029451@gmail.com
-### 안성우: 역할 / 
+### 김도현:  데이터사이언스학부 / dhkim011030@gmail.com
+### 김준환:  융합전자공학부 / junsemin@naver.com
+### 심준용:  수학과 / wnsdyd029451@gmail.com
+### 안성우:  융합전자공학부 / tjddn00124@gmail.com
 
 # I. Proposal
 
