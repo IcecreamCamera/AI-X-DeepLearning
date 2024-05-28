@@ -46,6 +46,11 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 # III. Methodology
 ### Explaining your choice of algorithms (methods)
+- Data Augmentation
+- VGG, ResNet, EfficientNet 모델 비교
+- CNN Filter Visualization
+- T-SNE Feature Embedding Visulaization
+- CAM (Class Activation Map) Visualization
 
 ### Explaining features (if any)
 
