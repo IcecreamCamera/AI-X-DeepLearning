@@ -25,10 +25,10 @@
 ### Describing your dataset
 https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset
 
-kaggle의 Food Image Classification Dataset을 이용하였다. 24k의 이미지들로 이루어져 있으며, 34개의 서양, 인도 음식으로 이루어져 있다.
+kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미지들로 이루어져 있으며, 34개 종류의 서양, 인도 음식으로 이루어져 있다.
 
 ### (class) 
-> **Baked Potato**, **Crispy Chicken**, **Donut**, **Fries**, **Hot     Dog**, **Sandwich**, **Taco**, **Taquito**, **apple_pie**, **buger**, **butter_naan**, **chai**, **chapati**, **cheesecake**, **chicken_curry**, **chole-bhature**, **dal_makhani**, **dhokla**, **fried_rice**, **ice_cream**, **idli**, **jalebi**, **kaathi_rolls**, **kadai_paneer**, **kulfi**, **masala_dosa**, **momos**, **omelette**, **paani_puri**, **pakode**
+> **Baked Potato**, **Crispy Chicken**, **Donut**, **Fries**, **Hot     Dog**, **Sandwich**, **Taco**, **Taquito**, **apple_pie**, **buger**, **butter_naan**, **chai**, **chapati**, **cheesecake**, **chicken_curry**, **chole-bhature**, **dal_makhani**, **dhokla**, **fried_rice**, **ice_cream**, **idli**, **jalebi**, **kaathi_rolls**, **kadai_paneer**, **kulfi**, **masala_dosa**, **momos**, **omelette**, **paani_puri**, **pakode**, **pav_bhaji**, **pizza**, **samosa**, **shushi**
 
 <center><img width="100%" alt="image" src="./images/imgs.png"></center>  <br>
 
@@ -44,7 +44,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k의 이미지
 ### Tools, libraries, blogs, or any documentation that you have used to to this project.
 **Tool**:
 
-**Library**: **PyTorch**(troch, torchvision)
+**Library**: **PyTorch**(torch, torchvision)
 
 **Blog**: **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset) **(Dataset)**
 
