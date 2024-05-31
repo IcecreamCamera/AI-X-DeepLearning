@@ -19,7 +19,7 @@
 
 
 ### What do you want to see at the end?
-우선, 음식 이미지 분류를 다양한 deep learning 모델(resNet50, Efficinet, VGG)을 활용하여 성능비교(accuracy, error rate 등)를 해보고, 최적의 모델을 찾아보려고 한다. 그 뒤, 해당 모델을 이용하여 본격적으로 이미지 분류 학습을 하고 CAM(class activation map)분석을 통하여 가중치를 시각화 하고 어떤 가중치들이 분류에 있어서 주요했는지를 분석하고자 한다. 이를 통해서 음식 이미지 분류에 있어서 key가 되는 부분을 확인하여 궁극적으로 성능 개선을 통해 실생활에서도 오류없이 적용가능한 모델로 발전시킬 수 있는 지를 분석해본다.
+우선, 음식 이미지 분류를 다양한 deep learning 모델(ResNet50, Efficinet, VGG)을 활용하여 성능비교(Accuracy, Error Rate 등)를 해보고, 최적의 모델을 찾아보려고 한다. 그 뒤, 해당 모델을 이용하여 본격적으로 이미지 분류 학습을 하고 CAM(Class Activation Map)분석을 통하여 가중치를 시각화 하고 어떤 가중치들이 분류에 있어서 주요했는지를 분석하고자 한다. 이를 통해서 음식 이미지 분류에 있어서 key가 되는 부분을 확인하여 궁극적으로 성능 개선을 통해 실생활에서도 오류없이 적용가능한 모델로 발전시킬 수 있는 지를 분석해본다.
 
 # II. Datasets
 ### Describing your dataset
@@ -50,7 +50,8 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 # III. Methodology
 ### Explaining your choice of algorithms (methods)
-- Data Augmentation
+- Data Augmentation(데이터 증강)
+> 데이터 증강은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 셋을 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
 - VGG, ResNet, EfficientNet Model Comparison
 - CNN Filter Visualization
 - T-SNE Feature Embedding Visulaization
