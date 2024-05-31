@@ -50,7 +50,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 # III. Methodology
 ### Explaining your choice of algorithms (methods)
-- Data Augmentation(데이터 증강)
+- 데이터 증강(Data Augmentation)
 > 데이터 증강은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 셋을 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
 - VGG, ResNet, EfficientNet Model Comparison
 - CNN Filter Visualization
@@ -69,13 +69,13 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 # V. Related Works (e.g., existing studies)
 ### Tools, libraries, blogs, or any documentation that you have used to to this project.
-**Tool**:
+**툴(Tool)**:
 
-**Library**: **PyTorch**(torch, torchvision)
+**라이브러리(Library)**: **PyTorch**(torch, torchvision)
 
-**Blog**: **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset) **(Dataset)**
+**블로그(Blog)**: **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset) **(Dataset)**
 
-**Paper**: Deep Residual Learning for Image Recognition (https://arxiv.org/pdf/1512.03385)
+**논문(Paper)**: Deep Residual Learning for Image Recognition (https://arxiv.org/pdf/1512.03385)
 
 Learning Deep Features for Discriminative Localization (https://arxiv.org/pdf/1512.04150)
 
