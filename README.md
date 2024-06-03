@@ -74,7 +74,17 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 우리는 이 ResNet50을 채택하였다.
 
 - CNN Filter Visualization
+
+<center><img width="100%" alt="image" src="./images/CNN_Filter_image.png"></center>
+
+> CNN 필터 시각화(CNN Filter Visulaization)는 컨볼루션 신경망(CNN)의 내부 작동 방식을 이해하고, 모델이 입력 이미지에서 어떤 특징을 학습하는지 분석하는 데 사용된다. CNN의 필터는 이미지의 특정 패턴이나 특징을 감지하는 역할을 하며, 필터 시각화는 이러한 과정이 어떻게 이루어지는지 시각적으로 보여준다
+
 - T-SNE Feature Embedding Visulaization
+
+<center><img width="100%" alt="image" src="./images/T-SNE_image.png"></center>
+
+> t-SNE(t-Distributed Stochastic Neighbor Embedding)은 고차원 데이터를 저차원(주로 2차원 또는 3차원) 공간에 시각화하여 데이터의 패턴과 구조를 쉽게 이해할 수 있도록 해주는 차원 축소 기법이다. 데이터 사이의 유사성을 보존하면서 고차원 공간에서의 군집 구조를 저차원 공간에서도 잘 드러내는 특징이 있다.
+
 - CAM (Class Activation Map) Visualization
 
 <center><img width="100%" alt="image" src="./images/CAM_image.png"></center>
@@ -111,7 +121,9 @@ EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (https:
 
 Very Deep Convolutional Networks for Large-Scale Image Recognitio (https://arxiv.org/pdf/1409.1556)
 
+Visualizing Data using t-SNE (https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
 
+Visualizing and Understanding Convolutional Networks (https://arxiv.org/pdf/1311.2901)
 
 # VI. Conclusion: Discussion
 
