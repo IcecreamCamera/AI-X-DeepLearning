@@ -71,10 +71,17 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 <center><img width="100%" alt="image" src="./images/ResNet_image.png"></center>
 
 > ResNet(Residual Networks)은 딥러닝 모델의 깊이를 증가시키면서도 학습이 가능하도록 설계된 모델로, '잔차학습'(Residual Learning)이라는 개념을 도입해 매우 깊은 네트워크에서도 효과적으로 학습할 수 있도록 하였다. ResNet은 성능이 매우 뛰어나며, 기울기 소실(Gradient Vanishing)문제를 효과적으로 해결하여 복잡한 문제를 해결할 수 있는 능력을 제공하고 이를 통해 이미지 분류, 객체 탐지 등 다양한 컴퓨터 비전 과제에서 높은 성능을 발휘한다.
+우리는 이 ResNet50을 채택하였다.
 
 - CNN Filter Visualization
 - T-SNE Feature Embedding Visulaization
 - CAM (Class Activation Map) Visualization
+
+<center><img width="100%" alt="image" src="./images/CAM_image.png"></center>
+
+> CAM(Class Activation Mapping) 시각화는 딥러닝 모델이 이미지의 어떤 부분을 사용하여 특정 클래스를 예측하는지 시각적으로 이해할 수 있게 해주는 기술이다. CAM은 주로 이미지 분류와 같은 컴퓨터 비전 작업에서 모델의 예측을 해석하고 디버깅하는 데 사용된다. 
+
+
 
 ### Explaining features (if any)
 
