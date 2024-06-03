@@ -53,7 +53,22 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 - 데이터 증강(Data Augmentation)
 > 데이터 증강은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 셋을 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
 - VGG, ResNet, EfficientNet Model Comparison
-> 
+
+**VGG**
+
+<center><img width="100%" alt="image" src="./images/vgg_Fig_01.png"></center>
+
+> VGG(Visual Geometry Group)는 대규모 이미지 인식을 위한 매우 깊은 컨볼루션 네트워크이다. 16 혹은 19개의 레이어를 이용하고, 큰 커널 크기 필터를 여러 3X3 커널 크기 필터로 차례로 교체하여 AlexNet에 비해 상당한 개선을 이루었다.
+
+**ResNet**
+
+>
+
+**EfficeintNet**
+
+>
+
+
 - CNN Filter Visualization
 - T-SNE Feature Embedding Visulaization
 - CAM (Class Activation Map) Visualization
