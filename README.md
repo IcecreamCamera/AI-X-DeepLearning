@@ -52,7 +52,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 ### Explaining your choice of algorithms (methods)
 - 데이터 증강(Data Augmentation)
 > 데이터 증강은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 셋을 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
-- VGG, ResNet, EfficientNet Model Comparison
+- VGG, EfficientNet, ResNet Model Comparison
 
 **VGG**
 
@@ -60,14 +60,17 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 > VGG(Visual Geometry Group)는 대규모 이미지 인식을 위한 매우 깊은 컨볼루션 네트워크이다. 16 혹은 19개의 레이어를 이용하고, 큰 커널 크기 필터를 여러 3X3 커널 크기 필터로 차례로 교체하여 AlexNet에 비해 상당한 개선을 이루었다.
 
-**ResNet**
-
->
-
 **EfficeintNet**
 
->
+<center><img width="100%" alt="image" src="./images/EfficientNet_image.png"></center>
 
+> EfficientNet은 세 가지 차원(너비, 깊이, 해상도)에서 모델을 동시에 확장하는 '복합 스케일링'(Compound Scaling)방식을 사용한다. 이를 통해 모델의 효율성과 성능을 최적화하여 효율성, 고성능 그리고 높은 범용성을 가진 모델이다.
+
+**ResNet**
+
+<center><img width="100%" alt="image" src="./images/ResNet_image.png"></center>
+
+> ResNet(Residual Networks)은 딥러닝 모델의 깊이를 증가시키면서도 학습이 가능하도록 설계된 모델로, '잔차학습'(Residual Learning)이라는 개념을 도입해 매우 깊은 네트워크에서도 효과적으로 학습할 수 있도록 하였다. ResNet은 성능이 매우 뛰어나며, 기울기 소실(Gradient Vanishing)문제를 효과적으로 해결하여 복잡한 문제를 해결할 수 있는 능력을 제공하고 이를 통해 이미지 분류, 객체 탐지 등 다양한 컴퓨터 비전 과제에서 높은 성능을 발휘한다.
 
 - CNN Filter Visualization
 - T-SNE Feature Embedding Visulaization
