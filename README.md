@@ -29,7 +29,7 @@
 
 
 ### What do you want to see at the end?
-우선, 음식 이미지 분류를 다양한 deep learning 모델(ResNet50\[4\](Deep Residual Learning for Image Recognition), AlexNet, VGG)을 활용하여 성능비교(Accuracy, Error Rate 등)를 해보고, 최적의 모델을 찾아보려고 한다. 그 뒤, 해당 모델을 이용하여 본격적으로 이미지 분류 학습을 하고 CAM(Class Activation Map)분석을 통하여 가중치를 시각화 하고 어떤 가중치들이 분류에 있어서 주요했는지를 분석하고자 한다. 이를 통해서 음식 이미지 분류에 있어서 key가 되는 부분을 확인하여 궁극적으로 성능 개선을 통해 실생활에서도 오류없이 적용가능한 모델로 발전시킬 수 있는 지를 분석해본다.
+우선, 음식 이미지 분류를 다양한 deep learning 모델(ResNet50[4](#논문paper), AlexNet[5](#논문paper), VGG[6](#논문paper))을 활용하여 성능비교(Accuracy, Error Rate 등)를 해보고, 최적의 모델을 찾아보려고 한다. 그 뒤, 해당 모델을 이용하여 본격적으로 이미지 분류 학습을 하고 CNN Filter Visualization 분석, T-SNE Feature Embedding Visulaization 분석, CAM(Class Activation Map)분석을 통하여 가중치를 시각화 하고 어떤 가중치들이 분류에 있어서 주요했는지를 분석하고자 한다. 이를 통해서 음식 이미지 분류에 있어서 key가 되는 부분을 확인하여 궁극적으로 성능 개선을 통해 실생활에서도 오류없이 적용가능한 모델로 발전시킬 수 있는 지를 분석해본다.
 
 # II. Datasets
 ### Describing your dataset
@@ -142,24 +142,25 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 **라이브러리(Library)**: **PyTorch**(torch, torchvision)
 
-**블로그(Blog)**: [Kaggle Dataset](https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset)
+### 블로그(Blog)
+> \[1\] [Kaggle Dataset](https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset)
 
-[Wikidocs page](https://wikidocs.net/164796)
+> \[2\] [Wikidocs page](https://wikidocs.net/164796)
 
-[About CNN Model page](https://velog.io/@kgh732/%EB%B6%80%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%94%84-AI-Tech-U-stage.-3-3)
+> \[3\] [About CNN Model page](https://velog.io/@kgh732/%EB%B6%80%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%94%84-AI-Tech-U-stage.-3-3)
 
-**논문(Paper)**: \[4\][Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385)
+### 논문(Paper)
+> \[4\] [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385)
 
-[Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/pdf/1409.1556)
+> \[5\] [ImageNet Classification with Deep Convolutional Neural Networks](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
 
-[ImageNet Classification with Deep Convolutional Neural Networks](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
+> \[6\] [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/pdf/1409.1556)
 
+> \[7\] [Visualizing and Understanding Convolutional Networks](https://arxiv.org/pdf/1311.2901)
 
-[Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150)
+> \[8\] [Visualizing Data using t-SNE](https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
 
-[Visualizing Data using t-SNE](https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
-
-[Visualizing and Understanding Convolutional Networks](https://arxiv.org/pdf/1311.2901)
+> \[9\] [Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150)
 
 # VI. Conclusion: Discussion
 
