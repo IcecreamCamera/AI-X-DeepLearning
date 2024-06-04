@@ -60,11 +60,9 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 > VGG(Visual Geometry Group)는 대규모 이미지 인식을 위한 매우 깊은 컨볼루션 네트워크이다. 16 혹은 19개의 레이어를 이용하고, 큰 커널 크기 필터를 여러 3X3 커널 크기 필터로 차례로 교체하여 AlexNet에 비해 상당한 개선을 이루었다.
 
-**EfficeintNet**
+**AlexNet**
 
-<center><img width="100%" alt="image" src="./images/EfficientNet_image.png"></center>
-
-> EfficientNet은 세 가지 차원(너비, 깊이, 해상도)에서 모델을 동시에 확장하는 '복합 스케일링'(Compound Scaling)방식을 사용한다. 이를 통해 모델의 효율성과 성능을 최적화하여 효율성, 고성능 그리고 높은 범용성을 가진 모델이다.
+>
 
 **ResNet**
 
@@ -116,8 +114,6 @@ https://wikidocs.net/164796
 **논문(Paper)**: Deep Residual Learning for Image Recognition (https://arxiv.org/pdf/1512.03385)
 
 Learning Deep Features for Discriminative Localization (https://arxiv.org/pdf/1512.04150)
-
-EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (https://arxiv.org/pdf/1905.11946)
 
 Very Deep Convolutional Networks for Large-Scale Image Recognitio (https://arxiv.org/pdf/1409.1556)
 
