@@ -62,7 +62,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 **VGG**
 
-<center><img width="100%" alt="image" src="./images/vgg_Fig_01.png"></center>
+<center><img width="100%" alt="image" src="./images/VGG_image.png"></center>
 
 > VGG(Visual Geometry Group)는 대규모 이미지 인식을 위한 매우 깊은 컨볼루션 네트워크이다. 16 혹은 19개의 레이어를 이용하고, 큰 커널 크기 필터를 여러 3X3 커널 크기 필터로 차례로 교체하여 AlexNet에 비해 상당한 개선을 이루었다.
 
@@ -112,6 +112,8 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 **블로그(Blog)**: **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset) **(Dataset)**
 
 https://wikidocs.net/164796
+
+https://velog.io/@kgh732/%EB%B6%80%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%94%84-AI-Tech-U-stage.-3-3
 
 **논문(Paper)**: Deep Residual Learning for Image Recognition (https://arxiv.org/pdf/1512.03385)
 
