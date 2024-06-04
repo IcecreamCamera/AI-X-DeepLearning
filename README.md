@@ -31,7 +31,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 > **Baked Potato**, **Crispy Chicken**, **Donut**, **Fries**, **Hot     Dog**, **Sandwich**, **Taco**, **Taquito**, **apple_pie**, **buger**, **butter_naan**, **chai**, **chapati**, **cheesecake**, **chicken_curry**, **chole-bhature**, **dal_makhani**, **dhokla**, **fried_rice**, **ice_cream**, **idli**, **jalebi**, **kaathi_rolls**, **kadai_paneer**, **kulfi**, **masala_dosa**, **momos**, **omelette**, **paani_puri**, **pakode**, **pav_bhaji**, **pizza**, **samosa**, **shushi**
 
 
-<center><img width="100%" alt="image" src="./images/imgs.png"></center>  <br>
+<center><img width="100%" alt="image" src="./images/Dataset/imgs.png"></center>  <br>
 
 데이터셋을 훈련, 검증, 테스트 세트로 나누는 것은 하이퍼 파라미터를 조정하여 모델의 성능을 효과적으로 평가하고 과적합을 방지하기 위한 중요한 단계이다.
 
@@ -52,7 +52,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 ### Explaining your choice of algorithms (methods)
 - 데이터 증강(Data Augmentation)
 
-<center><img width="100%" alt="image" src="./images/Dataset/Methodology/Data_Augmentation.png"></center>
+<center><img width="100%" alt="image" src="./images/Methodology/Data_Augmentation.png"></center>
 
 > 데이터 증강은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 셋을 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
 - VGG, AlexNet, ResNet Model Comparison
