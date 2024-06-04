@@ -54,17 +54,17 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 > 데이터 증강은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 셋을 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
 - VGG, AlexNet, ResNet Model Comparison
 
-**VGG**
-
-<center><img width="100%" alt="image" src="./images/vgg_Fig_01.png"></center>
-
-> VGG(Visual Geometry Group)는 대규모 이미지 인식을 위한 매우 깊은 컨볼루션 네트워크이다. 16 혹은 19개의 레이어를 이용하고, 큰 커널 크기 필터를 여러 3X3 커널 크기 필터로 차례로 교체하여 AlexNet에 비해 상당한 개선을 이루었다.
-
 **AlexNet**
 
 <center><img width="100%" alt="image" src="./images/AlexNet_image.png"></center>
 
 > AlexNet은  심층 신경망 모델로, 딥러닝 분야에서 중요한 전환점을 마련했다. AlexNet은 이미지 분류 작업에서 탁월한 성능을 보여주며, 그 이후의 딥러닝 연구에 큰 영향을 미쳤습니다 신경망 구조, ReLU활성화 함수, 드롭아웃, 데이터 증강, 그리고 GPU 병렬처리를 통해 성능을 극대화했다.
+
+**VGG**
+
+<center><img width="100%" alt="image" src="./images/vgg_Fig_01.png"></center>
+
+> VGG(Visual Geometry Group)는 대규모 이미지 인식을 위한 매우 깊은 컨볼루션 네트워크이다. 16 혹은 19개의 레이어를 이용하고, 큰 커널 크기 필터를 여러 3X3 커널 크기 필터로 차례로 교체하여 AlexNet에 비해 상당한 개선을 이루었다.
 
 **ResNet**
 
@@ -105,7 +105,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 # V. Related Works (e.g., existing studies)
 ### Tools, libraries, blogs, or any documentation that you have used to to this project.
-**툴(Tool)**:
+**툴(Tool)**: Python
 
 **라이브러리(Library)**: **PyTorch**(torch, torchvision)
 
@@ -115,9 +115,12 @@ https://wikidocs.net/164796
 
 **논문(Paper)**: Deep Residual Learning for Image Recognition (https://arxiv.org/pdf/1512.03385)
 
-Learning Deep Features for Discriminative Localization (https://arxiv.org/pdf/1512.04150)
+Very Deep Convolutional Networks for Large-Scale Image Recognition (https://arxiv.org/pdf/1409.1556)
 
-Very Deep Convolutional Networks for Large-Scale Image Recognitio (https://arxiv.org/pdf/1409.1556)
+ImageNet Classification with Deep Convolutional Neural Networks (https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
+
+
+Learning Deep Features for Discriminative Localization (https://arxiv.org/pdf/1512.04150)
 
 Visualizing Data using t-SNE (https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
 
