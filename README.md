@@ -91,10 +91,6 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 > CAM(Class Activation Mapping) 시각화는 딥러닝 모델이 이미지의 어떤 부분을 사용하여 특정 클래스를 예측하는지 시각적으로 이해할 수 있게 해주는 기술이다. CAM은 주로 이미지 분류와 같은 컴퓨터 비전 작업에서 모델의 예측을 해석하고 디버깅하는 데 사용된다. 
 
-
-
-### Explaining features (if any)
-
 # IV. Evaluation & Analysis
 ### Graphs, tables, any statistics (if any)
 
