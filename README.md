@@ -44,7 +44,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 <br>
 데이터셋의 클래스 분포는 다음과 같다.
-<center><img width="100%" alt="image" src="./images/class_distribution.png"></center>
+<center><img width="100%" alt="image" src="./images/Dataset/class_distribution.png"></center>
 
 
 
@@ -52,7 +52,7 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 ### Explaining your choice of algorithms (methods)
 - 데이터 증강(Data Augmentation)
 
-<center><img width="100%" alt="image" src="./images/Methodology/Data_Augmentation.png"></center>
+<center><img width="100%" alt="image" src="./images/Dataset/Methodology/Data_Augmentation.png"></center>
 
 > 데이터 증강은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 셋을 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
 - VGG, AlexNet, ResNet Model Comparison
@@ -98,8 +98,8 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 ### Graphs, tables, any statistics (if any)
 
 <p align="center">
-    <img width="45%" alt="image" src="./images/accuracy_graph.png">
-    <img width="45%" alt="image" src="./images/loss_graph.png">
+    <img width="45%" alt="image" src="./images/Evaluation&Analysis/accuracy_graph.png">
+    <img width="45%" alt="image" src="./images/Evaluation&Analysis/loss_graph.png">
 </p>
 
 # V. Related Works (e.g., existing studies)
