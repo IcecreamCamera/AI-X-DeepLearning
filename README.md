@@ -4,6 +4,16 @@
 # Title
 ## CNN을 이용한 음식 이미지 분류 및 실사용 예제
 
+# 목차 Contents
+
+- [Members](#Members)
+- I. [Proposal](#i-proposal)
+- II. [Datasets](#ii-datasets)
+- III. [Methodology](#iii-methodology)
+- IV. [Evaluation & Analysis](#iv-evaluation--analysis)
+- V. [Related Works](#v-related-works)
+- VI. [Conclusion-Discussion](#vi-conclusion-discussion)
+
 # Members
 ### 김도현:  데이터사이언스학부 / dhkim011030@gmail.com
 ### 김준환:  융합전자공학부 / junsemin@naver.com
@@ -19,7 +29,7 @@
 
 
 ### What do you want to see at the end?
-우선, 음식 이미지 분류를 다양한 deep learning 모델(ResNet50, AlexNet, VGG)을 활용하여 성능비교(Accuracy, Error Rate 등)를 해보고, 최적의 모델을 찾아보려고 한다. 그 뒤, 해당 모델을 이용하여 본격적으로 이미지 분류 학습을 하고 CAM(Class Activation Map)분석을 통하여 가중치를 시각화 하고 어떤 가중치들이 분류에 있어서 주요했는지를 분석하고자 한다. 이를 통해서 음식 이미지 분류에 있어서 key가 되는 부분을 확인하여 궁극적으로 성능 개선을 통해 실생활에서도 오류없이 적용가능한 모델로 발전시킬 수 있는 지를 분석해본다.
+우선, 음식 이미지 분류를 다양한 deep learning 모델(ResNet50[4](#<4>), AlexNet, VGG)을 활용하여 성능비교(Accuracy, Error Rate 등)를 해보고, 최적의 모델을 찾아보려고 한다. 그 뒤, 해당 모델을 이용하여 본격적으로 이미지 분류 학습을 하고 CAM(Class Activation Map)분석을 통하여 가중치를 시각화 하고 어떤 가중치들이 분류에 있어서 주요했는지를 분석하고자 한다. 이를 통해서 음식 이미지 분류에 있어서 key가 되는 부분을 확인하여 궁극적으로 성능 개선을 통해 실생활에서도 오류없이 적용가능한 모델로 발전시킬 수 있는 지를 분석해본다.
 
 # II. Datasets
 ### Describing your dataset
@@ -126,30 +136,30 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 > 각 클래스별 CAM(Class Activation Map)이다. 모델이 이미지의 음식 부분을 사용하여 특정 클래스로 잘 예측하고 있는 것을 알 수 있다.
 
-# V. Related Works (e.g., existing studies)
+# V. Related Works
 ### Tools, libraries, blogs, or any documentation that you have used to to this project.
 **툴(Tool)**: Python
 
 **라이브러리(Library)**: **PyTorch**(torch, torchvision)
 
-**블로그(Blog)**: **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset) **(Dataset)**
+**블로그(Blog)**: <1> **Kaggle**(https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dataset) **(Dataset)**
 
-https://wikidocs.net/164796
+<2> https://wikidocs.net/164796
 
-https://velog.io/@kgh732/%EB%B6%80%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%94%84-AI-Tech-U-stage.-3-3
+<3> https://velog.io/@kgh732/%EB%B6%80%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%94%84-AI-Tech-U-stage.-3-3
 
-**논문(Paper)**: Deep Residual Learning for Image Recognition (https://arxiv.org/pdf/1512.03385)
+**논문(Paper)**: <4> Deep Residual Learning for Image Recognition (https://arxiv.org/pdf/1512.03385)
 
-Very Deep Convolutional Networks for Large-Scale Image Recognition (https://arxiv.org/pdf/1409.1556)
+<5> Very Deep Convolutional Networks for Large-Scale Image Recognition (https://arxiv.org/pdf/1409.1556)
 
-ImageNet Classification with Deep Convolutional Neural Networks (https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
+<6> ImageNet Classification with Deep Convolutional Neural Networks (https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
 
 
-Learning Deep Features for Discriminative Localization (https://arxiv.org/pdf/1512.04150)
+<7> Learning Deep Features for Discriminative Localization (https://arxiv.org/pdf/1512.04150)
 
-Visualizing Data using t-SNE (https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
+<8> Visualizing Data using t-SNE (https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
 
-Visualizing and Understanding Convolutional Networks (https://arxiv.org/pdf/1311.2901)
+<9> Visualizing and Understanding Convolutional Networks (https://arxiv.org/pdf/1311.2901)
 
 # VI. Conclusion: Discussion
 
