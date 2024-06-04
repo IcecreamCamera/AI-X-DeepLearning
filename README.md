@@ -57,6 +57,8 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 > 데이터 증강은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 셋을 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
 - VGG, AlexNet, ResNet Model Comparison
 
+## 비교 모델
+
 **AlexNet**
 
 <center><img width="100%" alt="image" src="./images/Methodology/AlexNet_image.png"></center>
@@ -75,6 +77,8 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
 
 > ResNet(Residual Networks)은 딥러닝 모델의 깊이를 증가시키면서도 학습이 가능하도록 설계된 모델로, '잔차학습'(Residual Learning)이라는 개념을 도입해 매우 깊은 네트워크에서도 효과적으로 학습할 수 있도록 하였다. ResNet은 성능이 매우 뛰어나며, 기울기 소실(Gradient Vanishing)문제를 효과적으로 해결하여 복잡한 문제를 해결할 수 있는 능력을 제공하고 이를 통해 이미지 분류, 객체 탐지 등 다양한 컴퓨터 비전 과제에서 높은 성능을 발휘한다.
 우리는 이 ResNet50을 채택하였다.
+
+## 시각화 기법
 
 - CNN Filter Visualization
 
@@ -102,19 +106,25 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/loss_graph.png">
 </p>
 
-**우리는 세가지 visualization 방법을 활용하여 우리의 모델 성능을 확인해 보았다.**
+**우리는 다음 세가지 visualization 기법을 활용하여 우리의 모델 성능을 확인해 보았다.**
 
 - CNN Filter Visualization
 
 <center><img width="100%" alt="image" src="./images/Evaluation&Analysis/filters.png"></center>
 
+> 초반필터에서 간단한 패턴과 선을 잘 파악하고 있다는 것을 알 수 있다.
+
 - T-SNE Feature Embedding Visulaization
 
 <center><img width="100%" alt="image" src="./images/Evaluation&Analysis/feature_embedding.png"></center>
 
+> 클래스가 많아 4개로 나누어서 시각화 하였다. 약간의 오차는 있지만 각 클래스 별로 잘 분포되어 있는 것을 볼 수 있다.
+
 - CAM (Class Activation Map) Visualization
 
 <center><img width="100%" alt="image" src="./images/Evaluation&Analysis/cam.png"></center>
+
+> 각 클래스별 CAM(Class Activation Map)이다. 모델이 이미지의 음식 부분을 사용하여 특정 클래스로 잘 예측하고 있는 것을 알 수 있다.
 
 # V. Related Works (e.g., existing studies)
 ### Tools, libraries, blogs, or any documentation that you have used to to this project.
