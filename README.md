@@ -102,6 +102,20 @@ kaggle의 Food Image Classification Dataset을 이용하였다. 24k개의 이미
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/loss_graph.png">
 </p>
 
+**우리는 세가지 visualization 방법을 활용하여 우리의 모델 성능을 확인해 보았다.**
+
+- CNN Filter Visualization
+
+<center><img width="100%" alt="image" src="./images/Evaluation&Analysis/filters.png"></center>
+
+- T-SNE Feature Embedding Visulaization
+
+<center><img width="100%" alt="image" src="./images/Evaluation&Analysis/feature_embedding.png"></center>
+
+- CAM (Class Activation Map) Visualization
+
+<center><img width="100%" alt="image" src="./images/Evaluation&Analysis/cam.png"></center>
+
 # V. Related Works (e.g., existing studies)
 ### Tools, libraries, blogs, or any documentation that you have used to to this project.
 **툴(Tool)**: Python
