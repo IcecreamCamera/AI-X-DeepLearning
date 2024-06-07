@@ -53,7 +53,7 @@ kaggle의 Food Image Classification Dataset\[[1](#블로그blog)\]을 이용하�
 테스트 세트(Test Set): 15%
 
 <br>
-데이터셋의 클래스 분포는 다음과 같다.
+데이터 세트의 클래스 분포는 다음과 같다.
 <center><img width="100%" alt="image" src="./images/Dataset/class_distribution.png"></center>
 
 
@@ -64,7 +64,8 @@ kaggle의 Food Image Classification Dataset\[[1](#블로그blog)\]을 이용하�
 
 <center><img width="100%" alt="image" src="./images/Methodology/Data_Augmentation.png"></center>
 
-> 데이터 증강\[[4](#블로그blog)\]은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 셋을 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
+> 데이터 증강\[[4](#블로그blog)\]은 모델의 일반화 성능을 향상시키기 위해 기존의 데이터 세트를 회전, 이동, 스케일링, 플리핑 등 인위적으로 증가시키는 기법이다. 이를 통해 과적합(Overfitting)을 방지하고, 데이터의 다양성도 증가시킬 수 있다.
+
 - VGG, AlexNet, ResNet Model Comparison
 
 ## 비교 모델
@@ -73,7 +74,7 @@ kaggle의 Food Image Classification Dataset\[[1](#블로그blog)\]을 이용하�
 
 <center><img width="100%" alt="image" src="./images/Methodology/AlexNet_image.png"></center>
 
-> AlexNet\[[6](#논문paper)\]은  심층 신경망 모델로, 딥러닝 분야에서 중요한 전환점을 마련했다. AlexNet은 이미지 분류 작업에서 탁월한 성능을 보여주며, 그 이후의 딥러닝 연구에 큰 영향을 미쳤습니다 신경망 구조, ReLU활성화 함수, 드롭아웃, 데이터 증강, 그리고 GPU 병렬처리를 통해 성능을 극대화했다.
+> AlexNet\[[6](#논문paper)\]은  심층 신경망 모델로, 딥러닝 분야에서 중요한 전환점을 마련했다. AlexNet은 이미지 분류 작업에서 탁월한 성능을 보여주며, 그 이후의 딥러닝 연구에 큰 영향을 미쳤다 신경망 구조, ReLU활성화 함수, 드롭아웃, 데이터 증강, 그리고 GPU 병렬처리를 통해 성능을 극대화했다.
 
 **VGG**
 
@@ -86,7 +87,8 @@ kaggle의 Food Image Classification Dataset\[[1](#블로그blog)\]을 이용하�
 <center><img width="100%" alt="image" src="./images/Methodology/ResNet_image.png"></center>
 
 > ResNet(Residual Networks)\[[5](#논문paper)\]은 딥러닝 모델의 깊이를 증가시키면서도 학습이 가능하도록 설계된 모델로, '잔차학습'(Residual Learning)이라는 개념을 도입해 매우 깊은 네트워크에서도 효과적으로 학습할 수 있도록 하였다. ResNet은 성능이 매우 뛰어나며, 기울기 소실(Gradient Vanishing)문제를 효과적으로 해결하여 복잡한 문제를 해결할 수 있는 능력을 제공하고 이를 통해 이미지 분류, 객체 탐지 등 다양한 컴퓨터 비전 과제에서 높은 성능을 발휘한다.
-우리는 이 ResNet50을 채택하였다.
+
+우리는 실험 결과 세 개의 모델 중 성능이 더 좋았던 이 ResNet50을 채택하였다. (여기서 50은 layer층의 개수를 말한다.)
 
 ## 시각화 기법
 
@@ -94,7 +96,7 @@ kaggle의 Food Image Classification Dataset\[[1](#블로그blog)\]을 이용하�
 
 <center><img width="100%" alt="image" src="./images/Methodology/CNN_Filter_image.png"></center>
 
-> CNN 필터 시각화(CNN Filter Visulaization)\[[8](#논문paper)\]는 컨볼루션 신경망(CNN)의 내부 작동 방식을 이해하고, 모델이 입력 이미지에서 어떤 특징을 학습하는지 분석하는 데 사용된다. CNN의 필터는 이미지의 특정 패턴이나 특징을 감지하는 역할을 하며, 필터 시각화는 이러한 과정이 어떻게 이루어지는지 시각적으로 보여준다
+> CNN 필터 시각화(CNN Filter Visulaization)\[[8](#논문paper)\]는 컨볼루션 신경망(CNN)의 내부 작동 방식을 이해하고, 모델이 입력 이미지에서 어떤 특징을 학습하는지 분석하는 데 사용된다. CNN의 필터는 이미지의 특정 패턴이나 특징을 감지하는 역할을 하며, 필터 시각화는 이러한 과정이 어떻게 이루어지는지 시각적으로 보여준다.
 
 - T-SNE Feature Embedding Visulaization
 
@@ -110,6 +112,8 @@ kaggle의 Food Image Classification Dataset\[[1](#블로그blog)\]을 이용하�
 
 # IV. Evaluation & Analysis
 ### Graphs, tables, any statistics (if any)
+
+**다음은 우리 모델의 epoch에 따른 validation과 test 세트의 정확도(Accuracy)와 손실(loss)에 관한 그래프이다. 
 
 <p align="center">
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/accuracy_graph.png">
@@ -149,7 +153,7 @@ kaggle의 Food Image Classification Dataset\[[1](#블로그blog)\]을 이용하�
 
 > \[3\] [About CNN Model page](https://velog.io/@kgh732/%EB%B6%80%EC%8A%A4%ED%8A%B8%EC%BA%A0%ED%94%84-AI-Tech-U-stage.-3-3)
 
-> \[4\]https://pranjal-ostwal.medium.com/data-augmentation-for-computer-vision-b88b818b6010
+> \[4\] [About Data Augmentation](https://pranjal-ostwal.medium.com/data-augmentation-for-computer-vision-b88b818b6010)
 
 ### 논문(Paper)
 > \[5\] [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385)
