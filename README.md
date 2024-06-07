@@ -113,7 +113,7 @@ kaggle의 Food Image Classification Dataset\[[1](#블로그blog)\]을 이용하�
 # IV. Evaluation & Analysis
 ### Graphs, tables, any statistics (if any)
 
-**다음은 우리 모델의 epoch에 따른 validation과 test 세트의 정확도(Accuracy)와 손실(loss)에 관한 그래프이다. 
+**다음은 우리 모델의 epoch에 따른 validation과 test 세트의 정확도(Accuracy)와 손실(loss)에 관한 그래프이다.**
 
 <p align="center">
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/accuracy_graph.png">
