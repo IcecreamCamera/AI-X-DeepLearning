@@ -29,7 +29,7 @@
 
 
 ### What do you want to see at the end?
-우선, 음식 이미지 분류를 다양한 deep learning 모델(ResNet50\[[5](#논문paper)\], AlexNet\[[6](#논문paper)\], VGG\[[7](#논문paper)\])을 활용하여 성능비교(Accuracy, Error Rate 등)를 해보고, 최적의 모델을 찾아보려고 한다. 그 뒤, 해당 모델을 이용하여 본격적으로 이미지 분류 학습을 하고 CNN Filter Visualization\[[8](#논문paper)\] 분석, T-SNE Feature Embedding Visulaization\[[9](#논문paper)\] 분석, CAM(Class Activation Map)\[[10](#논문paper)\]분석을 통하여 가중치를 시각화 하고 어떤 가중치들이 분류에 있어서 주요했는지를 분석하고자 한다. 이를 통해서 음식 이미지 분류에 있어서 key가 되는 부분을 확인하여 궁극적으로 성능 개선을 통해 실생활에서도 오류없이 적용가능한 모델로 발전시킬 수 있는 지를 분석해본다.
+우선, 음식 이미지 분류를 다양한 deep learning 모델(ResNet50[[5]](#논문paper), AlexNet[[6]](#논문paper), VGG[[7]](#논문paper))을 활용하여 성능비교(Accuracy, Error Rate 등)를 해보고, 최적의 모델을 찾아보려고 한다. 그 뒤, 해당 모델을 이용하여 본격적으로 이미지 분류 학습을 하고 CNN Filter Visualization\[[8](#논문paper)\] 분석, T-SNE Feature Embedding Visulaization\[[9](#논문paper)\] 분석, CAM(Class Activation Map)\[[10](#논문paper)\]분석을 통하여 가중치를 시각화 하고 어떤 가중치들이 분류에 있어서 주요했는지를 분석하고자 한다. 이를 통해서 음식 이미지 분류에 있어서 key가 되는 부분을 확인하여 궁극적으로 성능 개선을 통해 실생활에서도 오류없이 적용가능한 모델로 발전시킬 수 있는 지를 분석해본다.
 
 # II. Datasets
 ### Describing your dataset
@@ -108,7 +108,7 @@ kaggle의 Food Image Classification Dataset\[[1](#블로그blog)\]을 이용하�
 
 <center><img width="100%" alt="image" src="./images/Methodology/CAM_image.png"></center>
 
-> CAM(Class Activation Mapping)\[[10](#논문paper)\] 시각화는 딥러닝 모델이 이미지의 어떤 부분을 사용하여 특정 클래스를 예측하는지 시각적으로 이해할 수 있게 해주는 기술이다. CAM은 주로 이미지 분류와 같은 컴퓨터 비전 작업에서 모델의 예측을 해석하고 디버깅하는 데 사용된다. 
+> CAM(Class Activation Mapping)[\[10\]](#논문paper) 시각화는 딥러닝 모델이 이미지의 어떤 부분을 사용하여 특정 클래스를 예측하는지 시각적으로 이해할 수 있게 해주는 기술이다. CAM은 주로 이미지 분류와 같은 컴퓨터 비전 작업에서 모델의 예측을 해석하고 디버깅하는 데 사용된다. 
 
 # IV. Evaluation & Analysis
 ### Graphs, tables, any statistics (if any)
