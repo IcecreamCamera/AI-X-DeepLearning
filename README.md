@@ -5,13 +5,16 @@
 ```python
 # train
 python main.py --mode=train --model_type=resnet
-
+```
+```python
 # test
 python main.py --mode=test --ckpt={ckpt_path}
-
+```
+```python
 # visualization
 pythom main.py --mode=visualization --ckpt={ckpt_path}
-
+```
+```python
 # inference (single image)
 python inference.py --ckpt={ckpt_path} --img={image_path}
 ```
@@ -23,14 +26,14 @@ python inference.py --ckpt={ckpt_path} --img={image_path}
 - II. [Datasets](#ii-datasets)
 - III. [Methodology](#iii-methodology)
 - IV. [Evaluation & Analysis](#iv-evaluation--analysis)
-- V. [Related Works](#v-related-works)
-- VI. [Conclusion-Discussion](#vi-conclusion-discussion)
+- V. [Conclusion-Discussion](#v-conclusion-discussion)
+- VI. [Related Works & References](#vi-related-works--references)
 
 # Members
-### 김도현:  데이터사이언스학부/ dhkim011030@gmail.com/ 모델 훈련 및 주요 코드 작성
-### 김준환:  융합전자공학부 / junsemin@naver.com/ git-hub관리 및 보고서 작성
-### 심준용:  수학과 / wnsdyd029451@gmail.com/ 데이터셋 선정 및 분석(조장)
-### 안성우:  융합전자공학부 / tjddn00124@gmail.com/ 발표 영상 촬영
+### 김도현:  데이터사이언스학부/ 모델 훈련 및 주요 코드 작성/ dhkim011030@gmail.com
+### 김준환:  융합전자공학부/ git-hub관리 및 보고서 작성/ junsemin@naver.com
+### 심준용:  수학과/ 데이터 셋 선정 및 분석(조장)/ wnsdyd029451@gmail.com
+### 안성우:  융합전자공학부/ 발표 영상 촬영/ tjddn00124@gmail.com
 
 # I. Proposal
 
@@ -109,7 +112,7 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 
 <center><img width="100%" alt="image" src="./images/Methodology/CNN_Filter_image.png"></center> <br>
 
-> CNN 필터 시각화(CNN Filter Visulaization)[[8]](#논문paper)는 컨볼루션 신경망(CNN)의 내부 작동 방식을 이해하고, 모델이 입력 이미지에서 어떤 특징을 학습하는지 분석하는 데 사용된다. CNN의 필터는 이미지의 특정 패턴이나 특징을 감지하는 역할을 하며, 필터 시각화는 이러한 과정이 어떻게 이루어지는지 시각적으로 보여준다.
+> CNN 필터 시각화(CNN Filter Visulaization)[[8]](#논문paper)는 컨볼루션 신경망(CNN)의 내부 작동 방식을 이해하고, 모델이 입력 이미지에서 어떤 특징을 학습하는지 분석하는 데 사용된다. CNN의 필터는 이미지의 특정 패턴이나 특징을 감지하는 역할을 하며, 필터 시각화는 이러한 과정이 어떻게 이루어지는지 시각적으로 보여주어서 이는 모델의 성능을 개선하거나, 예기치 않은 결과를 설명하는 데 유용한 정보를 제공할 수 있다.
 
 - T-SNE Feature Embedding Visulaization
 
@@ -139,21 +142,40 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 
 <center><img width="100%" alt="image" src="./images/Evaluation&Analysis/filters.png"></center> <br>
 
-> 초반필터에서 간단한 패턴과 선을 잘 파악하고 있다는 것을 알 수 있다.
+> CNN 필터 시각화를 통해 모델의 초기 필터가 이미지의 간단한 패턴과 선을 어떻게 파악하고 있는지를 알 수 있다. 시각화된 필터를 보면, 모델이 입력 이미지를 처리할 때 어떤 방식으로 되는지 볼 수 있다.
 
 - T-SNE Feature Embedding Visulaization
 
 <center><img width="100%" alt="image" src="./images/Evaluation&Analysis/feature_embedding.png"></center> <br>
 
-> 클래스가 많아 4개로 나누어서 시각화 하였다. 약간의 오차는 있지만 각 클래스 별로 잘 분포되어 있는 것을 볼 수 있다.
+> 클래스를 시각화하기 위해 데이터 셋을 4개의 그래프로 나누어 표현했다. 약간의 오차는 존재하지만, 각 클래스 별로 고유의 군집을 형성하며 명확하게 구분되고 있다. 이를 통해 클래스 별 분포가 잘 이루어져 있음을 확인할 수 있다.
 
 - CAM (Class Activation Map) Visualization
 
 <center><img width="100%" alt="image" src="./images/Evaluation&Analysis/cam.png"></center> <br>
 
-> 각 클래스별 CAM(Class Activation Map)이다. 모델이 이미지의 음식 부분을 사용하여 특정 클래스로 잘 예측하고 있는 것을 알 수 있다.
+> 아래 그림은 각 클래스별 CAM(Class Activation Map)이다. 모델이 이미지의 음식 부분을 효과적으로 사용하여 특정 클래스로 잘 예측하고 있는 것을 알 수 있다. 예를 들어, 아이스크림을 보면 스푼은 인식하지 않고 정확히 아이스크림만 인식하는 것을 볼 수 있다.
 
-# V. Related Works
+# V. Conclusion: Discussion
+우리 프로젝트는 현대인의 건강관리와 식단 관리에 대한 관심이 증가함에 따라, 이러한 요구를 충족시킬 수 있는 인공지능 시스템을 구축하고자 시작되었다. SNS의 발달과 코로나19 팬데믹은 운동과 건강에 대한 관심을 더욱 증대시켰으며, 그 결과 식단 관리에 대한 수요가 급증했으며 이에 발맞추어, 우리는 음식 이미지 분류를 통해 식단 관리에 실질적인 도움을 줄 수 있는 딥러닝 시스템을 개발하고자 했다.
+
+프로젝트 진행 과정에서 우리는 ResNet, AlexNet, VGG와 같은 다양한 딥러닝 모델을 활용하여 성능을 비교해보았다. 그 결과, ResNet 모델이 가장 높은 정확도를 보여주었다. 또한 여러 시각화 기법을 통해 모델의 성능과 내부 작동 방식을 심도 있게 분석할 수 있었다. 특히 CNN 필터 시각화, T-SNE 임베딩, CAM 분석을 통해 모델이 음식 이미지를 어떻게 인식하고 분류하는지 시각적으로 이해할 수 있었다.
+
+우리의 모델은 단순한 식단 관리에 그치지 않고, 레스토랑 추천, 건강 관리, 요리 레시피 추천 등 다양한 분야에서도 활용 가능성을 보여주었다. 이는 인공지능 기술이 실제 생활에서 다양한 방식으로 유용하게 적용될 수 있음을 증명하는 결과다.
+
+주요 성과 및 실생활 적용
+
+1. 모델 성능: ResNet이 가장 우수한 성능을 보였으며, 이를 통해 정확하고 신뢰성 있는 음식 이미지 분류가 가능함을 입증했다.
+
+2. 시각화 기법: 다양한 시각화 기법을 통해 모델의 내부 작동 방식을 이해하고, 분류에 중요한 역할을 하는 요소들을 파악했다.
+
+3. 실생활 적용: 우리가 직접 찍은 사진을 모델에 넣어서 우리의 모델이 실제로 식단 관리 외에도 레스토랑 추천, 건강 관리, 요리 레시피 추천 등 여러 분야에서 활용될 수 있는 가능성을 보여주었다.
+
+향후에는 더 다양한 음식 이미지를 포함한 대규모 데이터셋을 활용하여 모델의 일반화 능력을 향상시키고, 최신 딥러닝 기법을 적용하여 성능을 더욱 개선해 볼 수 있을 것이다. 또한, 실제 어플리케이션에 모델을 적용하여 실시간 음식 이미지 분류 시스템을 구축하고, 사용자 피드백을 통해 시스템을 지속적으로 개선해 나갈 수 있을 것이다.
+
+이번 프로젝트를 통해 우리는 인공지능을 활용한 음식 이미지 분류의 가능성을 파악할 수 있었으며, 이를 바탕으로 실생활에 유용하게 적용될 수 있는 모델 개발에 한 걸음 더 나아갈 수 있었다. 우리의 프로젝트는 인공지능 기술이 일상생활에서 다양한 문제를 해결하는 데 중요한 도구가 될 수 있음을 보여주었다.
+
+# VI. Related Works & References
 ### Tools, libraries, blogs, or any documentation that you have used to to this project.
 **툴(Tool)**: Python
 
@@ -180,22 +202,3 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 > \[9\] [Visualizing Data using t-SNE](https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
 
 > \[10\] [Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150)
-
-# VI. Conclusion: Discussion
-우리 프로젝트는 현대인의 건강관리와 식단 관리에 대한 관심이 증가함에 따라, 이러한 요구를 충족시킬 수 있는 인공지능 시스템을 구축하고자 시작되었다. SNS의 발달과 코로나19 팬데믹은 운동과 건강에 대한 관심을 더욱 증대시켰으며, 그 결과 식단 관리에 대한 수요가 급증했으며 이에 발맞추어, 우리는 음식 이미지 분류를 통해 식단 관리에 실질적인 도움을 줄 수 있는 딥러닝 시스템을 개발하고자 했다.
-
-프로젝트 진행 과정에서 우리는 ResNet, AlexNet, VGG와 같은 다양한 딥러닝 모델을 활용하여 성능을 비교해보았다. 그 결과, ResNet 모델이 가장 높은 정확도를 보여주었다. 또한 여러 시각화 기법을 통해 모델의 성능과 내부 작동 방식을 심도 있게 분석할 수 있었다. 특히 CNN 필터 시각화, T-SNE 임베딩, CAM 분석을 통해 모델이 음식 이미지를 어떻게 인식하고 분류하는지 시각적으로 이해할 수 있었다.
-
-우리의 모델은 단순한 식단 관리에 그치지 않고, 레스토랑 추천, 건강 관리, 요리 레시피 추천 등 다양한 분야에서도 활용 가능성을 보여주었다. 이는 인공지능 기술이 실제 생활에서 다양한 방식으로 유용하게 적용될 수 있음을 증명하는 결과다.
-
-주요 성과 및 실생활 적용
-
-1. 모델 성능: ResNet이 가장 우수한 성능을 보였으며, 이를 통해 정확하고 신뢰성 있는 음식 이미지 분류가 가능함을 입증했다.
-
-2. 시각화 기법: 다양한 시각화 기법을 통해 모델의 내부 작동 방식을 이해하고, 분류에 중요한 역할을 하는 요소들을 파악했다.
-
-3. 실생활 적용: 우리가 직접 찍은 사진을 모델에 넣어서 우리의 모델이 실제로 식단 관리 외에도 레스토랑 추천, 건강 관리, 요리 레시피 추천 등 여러 분야에서 활용될 수 있는 가능성을 보여주었다.
-
-향후에는 더 다양한 음식 이미지를 포함한 대규모 데이터셋을 활용하여 모델의 일반화 능력을 향상시키고, 최신 딥러닝 기법을 적용하여 성능을 더욱 개선해 볼 수 있을 것이다. 또한, 실제 어플리케이션에 모델을 적용하여 실시간 음식 이미지 분류 시스템을 구축하고, 사용자 피드백을 통해 시스템을 지속적으로 개선해 나갈 수 있을 것이다.
-
-이번 프로젝트를 통해 우리는 인공지능을 활용한 음식 이미지 분류의 가능성을 파악할 수 있었으며, 이를 바탕으로 실생활에 유용하게 적용될 수 있는 모델 개발에 한 걸음 더 나아갈 수 있었다. 우리의 프로젝트는 인공지능 기술이 일상생활에서 다양한 문제를 해결하는 데 중요한 도구가 될 수 있음을 보여주었다.
