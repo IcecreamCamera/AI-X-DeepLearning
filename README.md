@@ -4,16 +4,16 @@
 # Quick Start
 ```python
 # train
-python main.py --mode=train
+python main.py --mode=train --model_type=resnet
 
 # test
-python main.py --mode=test --ckpt= 
+python main.py --mode=test --ckpt={ckpt_path}
 
 # visualization
-pythom main.py --mode=visualization --ckpt=
+pythom main.py --mode=visualization --ckpt={ckpt_path}
 
 # inference (single image)
-python inference.py --ckpt= --img=
+python inference.py --ckpt={ckpt_path} --img={image_path}
 ```
 
 # 목차 Contents
