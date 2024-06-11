@@ -1,8 +1,20 @@
-# Food Image Classification
-
-
 # Title
 ## CNN을 이용한 음식 이미지 분류 및 실사용 예제
+
+# Quick Start
+```python
+# train
+python main.py --mode=train
+
+# test
+python main.py --mode=test --ckpt= 
+
+# visualization
+pythom main.py --mode=visualization --ckpt=
+
+# inference (single image)
+python inference.py --ckpt= --img=
+```
 
 # 목차 Contents
 
