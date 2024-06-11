@@ -15,10 +15,10 @@
 - VI. [Conclusion-Discussion](#vi-conclusion-discussion)
 
 # Members
-### 김도현:  데이터사이언스학부 / dhkim011030@gmail.com
-### 김준환:  융합전자공학부 / junsemin@naver.com
-### 심준용:  수학과 / wnsdyd029451@gmail.com
-### 안성우:  융합전자공학부 / tjddn00124@gmail.com
+### 김도현:  데이터사이언스학부/ dhkim011030@gmail.com/ 모델 훈련 및 주요 코드 작성
+### 김준환:  융합전자공학부 / junsemin@naver.com/ git-hub관리 및 보고서 작성
+### 심준용:  수학과 / wnsdyd029451@gmail.com/ 데이터셋 선정 및 분석(조장)
+### 안성우:  융합전자공학부 / tjddn00124@gmail.com/ 발표 영상 촬영
 
 # I. Proposal
 
@@ -114,7 +114,7 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 # IV. Evaluation & Analysis
 ### Graphs, tables, any statistics (if any)
 
-**다음은 우리 모델의 epoch에 따른 validation과 test 세트의 정확도(Accuracy)와 손실(loss)에 관한 그래프이다.**
+**다음은 우리 모델의 epoch에 따른 validation과 test 세트의 정확도(Accuracy)와 손실(loss)에 관한 그래프이다. 실험 모델로는 ResNet50을 사용하였다.**
 
 <p align="center">
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/accuracy_graph.png">
@@ -170,4 +170,8 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 > \[10\] [Learning Deep Features for Discriminative Localization](https://arxiv.org/pdf/1512.04150)
 
 # VI. Conclusion: Discussion
+우리 프로젝트는 현대인의 건강관리 및 식단관리에 대한 관심이 증가함에 따라, 이와 관련된 문제를 해결할 수 있는 인공지능 시스템을 구축하기 위해 시작되었다. SNS의 발달과 코로나19로 인해 운동과 건강에 대한 관심을 더욱 증대시켰고, 이에 따라 식단 관리에 대한 수요도 급증했다. 우리는 이에 발 맞춰 음식 이미지 분류를 통해 식단 관리에 도움을 줄 수 있는 딥러닝 시스템을 개발하고자 했다.
+그래서 우리는 ResNet, AlexNet, VGG모델을 활용하여 성능비교를 하였고, ResNet이 가장 높은 정확도를 보여줬으며 또한 여러 시각화 기법을 활용해 모델의 성능을 확인 할 수 있었다. 
+우리의 모델은 단순한 식단 관리뿐만 아니라, 레스토랑 추천, 건강관리, 요리 레시피 추천 등 다양한 분야에서의 활용 가능성을 탐구하였다.
 
+데이터 선정 및 분석, 코드 작성, 깃허브 관리, 보고서 작성, 영상촬영
