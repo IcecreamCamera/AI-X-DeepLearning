@@ -129,12 +129,14 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 # IV. Evaluation & Analysis
 ### Graphs, tables, any statistics (if any)
 
-**다음은 우리 모델의 epoch에 따른 validation과 test 세트의 정확도(Accuracy)와 손실(loss)에 관한 그래프이다. 실험 모델로는 ResNet50을 사용하였다.**
+**다음은 세 개의 모델(AlexNet, VGG16, ResNet50)을 사용하여 epoch에 따른 validation과 test 세트의 정확도(Accuracy)와 손실(Loss)을 분석한 결과를 그래프로 나타낸 것이다.**
 
 <p align="center">
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/accuracy_graph.png">
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/loss_graph.png">
 </p>
+
+> 그래프에서 확인할 수 있듯이, ResNet50 모델은 모든 epoch에서 가장 높은 Accuracy 값을 기록했다. 이는 ResNet50이 다른 모델들에 비해 더 우수한 일반화 성능을 가지고 있음을 보여주었고, Loss 값에서도 ResNet50이 가장 낮은 값을 유지하였으며, 이는 모델의 예측이 실제 값과 얼마나 일치하는지를 보여주는 지표로, ResNet50이 다른 모델들보다 더 정확한 예측을 수행함을 의미한다.
 
 **다음은 위에서 언급한 CNN Filter Visualiztion, T-SNE Feature Embedding Visulaization, CAM (Class Activation Map) Visualization  세가지 visualization 기법을 활용하여 우리 모델의 성능을 확인해본 결과이다.**
 
@@ -155,6 +157,12 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 <center><img width="100%" alt="image" src="./images/Evaluation&Analysis/cam.png"></center> <br>
 
 > 아래 그림은 각 클래스별 CAM(Class Activation Map)이다. 모델이 이미지의 음식 부분을 효과적으로 사용하여 특정 클래스로 잘 예측하고 있는 것을 알 수 있다. 예를 들어, 아이스크림을 보면 스푼은 인식하지 않고 정확히 아이스크림만 인식하는 것을 볼 수 있다.
+
+**마지막으로 우리가 직접 찍은 사진(햄버거, 초밥, 치즈케이크)에 대해 ResNet50을 활용하여 분류해 보았다. Accuracy가 상당히 높은 것을 볼 수 있다.**
+
+<center><img width="100%" alt="image" src="./images/Evaluation&Analysis/test.png"></center> <br>
+
+> 이를 통해 햄버거, 초밥, 치즈케이크와 같은 실용적인 이미지 분류 작업에서도 매우 유용하게 작동하였으며, 이는 향후 레스토랑 메뉴 추천 시스템이나 혹은 음식의 종류를 자동으로 인식하여 이에 대한 영양 성분 분석 등과 같은 더 복잡한 이미지 분류 작업에서 큰 도움이 되어 그러한 연구에 발판이 될 수 있을 것이다.
 
 # V. Conclusion: Discussion
 우리 프로젝트는 현대인의 건강관리와 식단 관리에 대한 관심이 증가함에 따라, 이러한 요구를 충족시킬 수 있는 인공지능 시스템을 구축하고자 시작되었다. SNS의 발달과 코로나19 팬데믹은 운동과 건강에 대한 관심을 더욱 증대시켰으며, 그 결과 식단 관리에 대한 수요가 급증했으며 이에 발맞추어, 우리는 음식 이미지 분류를 통해 식단 관리에 실질적인 도움을 줄 수 있는 딥러닝 시스템을 개발하고자 했다.
