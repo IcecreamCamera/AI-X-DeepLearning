@@ -129,7 +129,7 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 # IV. Evaluation & Analysis
 ### Graphs, tables, any statistics (if any)
 
-**다음은 세 개의 모델(AlexNet, VGG16, ResNet50)을 사용하여 epoch에 따른 train과 validation 세트의 정확도(accuracy)와 손실(loss)을 분석한 결과를 그래프로 나타낸 것이다.**
+**다음은 세 개의 모델(AlexNet, VGG16, ResNet50)을 사용하여 epoch에 따른 train과 validation 세트의 정확도(accuracy)와 손실값(loss)을 그래프로 나타낸 것이다.**
 
 <p align="center">
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/accuracy_graph.png">
