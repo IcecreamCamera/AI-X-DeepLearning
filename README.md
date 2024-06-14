@@ -64,7 +64,7 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 
 또한, 추가로 각자 실제 음식 사진을 찍어서 테스트 함으로써 실제 사용자가 사진을 찍었을 때의 결과도 같이 평가 하였다. 다음은 우리가 찍은 실제 사진이다.
 
-<center><img width="100%" alt="image" src="./images/찍은 사진/food_img.png"></center>  <br>
+<center><img width="100%" alt="image" src="./images/Photos/food_img.png"></center>  <br>
 
 해당 데이터셋을 훈련, 검증, 테스트 세트로 나누는 것은 하이퍼 파라미터를 조정하여 모델의 성능을 효과적으로 평가하고 과적합을 방지하기 위한 중요한 단계이다. 이에 따른 우리의 훈련, 검증, 테스트 세트에 대한 분포는 다음과 같다.
 
