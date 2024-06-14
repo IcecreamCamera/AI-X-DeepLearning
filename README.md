@@ -19,6 +19,10 @@ pythom main.py --mode=visualization --ckpt={ckpt_path}
 python inference.py --ckpt={ckpt_path} --img={image_path}
 ```
 
+# YouTube Explanation Link
+
+https://www.youtube.com/watch?v=IKOx9QiZCqI
+
 # 목차 Contents
 
 - [Members](#Members)
