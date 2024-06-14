@@ -12,6 +12,8 @@ def train(model, args, train_dataloader, optim, val_dataloader=None, lr_schedule
     if not os.path.exists("checkpoint"):
         os.mkdir("checkpoint")
 
+    f = open(f"{args.model_name}_log.txt", "w")
+
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model.to(device)
 
@@ -41,6 +43,7 @@ def train(model, args, train_dataloader, optim, val_dataloader=None, lr_schedule
         train_epoch_acc = torch.stack(train_epoch_acc).mean().item()
         train_epoch_loss = torch.stack(train_epoch_loss).mean().item()
         print(f"Epoch {epoch+1}/{args.epoch}  train accuracy: {train_epoch_acc}  train loss: {train_epoch_loss}")
+        f.write(f"Epoch {epoch+1}/{args.epoch}  train accuracy: {train_epoch_acc}  train loss: {train_epoch_loss}\n")
 
         train_acc.append(train_epoch_acc)
         train_loss.append(train_epoch_loss)
@@ -61,6 +64,7 @@ def train(model, args, train_dataloader, optim, val_dataloader=None, lr_schedule
             val_epoch_acc = torch.stack(val_epoch_acc).mean().item()
             val_epoch_loss = torch.stack(val_epoch_loss).mean().item()
             print(f"Epoch {epoch+1}/{args.epoch}  val accuracy: {val_epoch_acc}  val loss: {val_epoch_loss}")
+            f.write(f"Epoch {epoch+1}/{args.epoch}  val accuracy: {val_epoch_acc}  val loss: {val_epoch_loss}\n")
 
             val_acc.append(val_epoch_acc)
             val_loss.append(val_epoch_loss)
@@ -72,6 +76,6 @@ def train(model, args, train_dataloader, optim, val_dataloader=None, lr_schedule
             torch.save(model.state_dict(), f"checkpoint/{args.model_name}_maxval.pth")
             max_val_acc = val_epoch_acc
 
-    save_acc_graph(train_acc, val_acc)
-    save_loss_graph(train_loss, val_loss)
+    save_acc_graph(train_acc, val_acc, f"{args.model_name}_acc")
+    save_loss_graph(train_loss, val_loss, f"{args.model_name}_loss")
     

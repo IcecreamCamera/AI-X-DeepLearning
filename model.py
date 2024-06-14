@@ -2,9 +2,21 @@ import torch.nn as nn
 import torchvision
 
 
+def make_alexnet(num_classes, pretrained=True):
+    model = torchvision.models.alexnet(weights="DEFAULT" if pretrained else None)
+    model.classifier = nn.Linear(9216, num_classes)
+    return model
+
+
+def make_vgg(num_classes, pretrained=True):
+    model = torchvision.models.vgg16(weights="DEFAULT" if pretrained else None)
+    model.classifier = nn.Linear(25088, num_classes)
+    return model
+
+
 def make_resnet50(num_classes, pretrained=True):
     model = torchvision.models.resnet50(weights="DEFAULT" if pretrained else None)
-    model.fc = nn.Linear(2048,num_classes)
+    model.fc = nn.Linear(2048, num_classes)
     return model
 
 
