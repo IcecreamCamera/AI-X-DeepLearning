@@ -66,7 +66,7 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 
 <center><img width="100%" alt="image" src="./images/Photos/food_img.png"></center>  <br>
 
-해당 데이터셋을 훈련, 검증, 테스트 세트로 나누는 것은 하이퍼 파라미터를 조정하여 모델의 성능을 효과적으로 평가하고 과적합을 방지하기 위한 중요한 단계이다. 이에 따른 우리의 훈련, 검증, 테스트 세트에 대한 분포는 다음과 같다.
+해당 데이터셋을 훈련, 검증, 테스트 세트로 나누었는데, 검증 세트까지 나눈 이유는 하이퍼 파라미터를 조정하여 모델의 성능을 효과적으로 평가하고 과적합을 방지하기 위한 중요한 단계이기 때문이다. 이에 따른 우리의 훈련, 검증, 테스트 세트에 대한 분포는 다음과 같다.
 
 훈련 세트(Train Set):70%
 
@@ -129,14 +129,14 @@ kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였
 # IV. Evaluation & Analysis
 ### Graphs, tables, any statistics (if any)
 
-**다음은 세 개의 모델(AlexNet, VGG16, ResNet50)을 사용하여 epoch에 따른 validation과 test 세트의 정확도(Accuracy)와 손실(Loss)을 분석한 결과를 그래프로 나타낸 것이다.**
+**다음은 세 개의 모델(AlexNet, VGG16, ResNet50)을 사용하여 epoch에 따른 train과 validation 세트의 정확도(accuracy)와 손실(loss)을 분석한 결과를 그래프로 나타낸 것이다.**
 
 <p align="center">
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/accuracy_graph.png">
     <img width="45%" alt="image" src="./images/Evaluation&Analysis/loss_graph.png">
 </p>
 
-> 그래프에서 확인할 수 있듯이, ResNet50 모델은 모든 epoch에서 가장 높은 Accuracy 값을 기록했다. 이는 ResNet50이 다른 모델들에 비해 더 우수한 일반화 성능을 가지고 있음을 보여주었고, Loss 값에서도 ResNet50이 가장 낮은 값을 유지하였으며, 이는 모델의 예측이 실제 값과 얼마나 일치하는지를 보여주는 지표로, ResNet50이 다른 모델들보다 더 정확한 예측을 수행함을 의미한다.
+> 그래프에서 확인할 수 있듯이, ResNet50 모델은 모든 epoch에서 가장 높은 accuracy 값을 기록했다. 이는 ResNet50이 다른 모델들에 비해 더 우수한 일반화 성능을 가지고 있음을 보여주었고, loss 값에서도 ResNet50이 가장 낮은 값을 유지하였으며, accuracy는 모델의 예측이 실제 값과 얼마나 일치하는지를 보여주는 지표로, ResNet50이 다른 모델들보다 더 정확한 예측을 수행함을 의미한다.
 
 **다음은 위에서 언급한 CNN Filter Visualiztion, T-SNE Feature Embedding Visulaization, CAM (Class Activation Map) Visualization  세가지 visualization 기법을 활용하여 우리 모델의 성능을 확인해본 결과이다.**
 
