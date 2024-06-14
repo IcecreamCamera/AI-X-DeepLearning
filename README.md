@@ -21,7 +21,7 @@ python inference.py --ckpt={ckpt_path} --img={image_path}
 
 # YouTube Explanation Link
 
-<iframe width="1236" height="695" src="https://www.youtube.com/embed/IKOx9QiZCqI" title="AI+DL 음식 분류" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/embed/IKOx9QiZCqI
 
 # 목차 Contents
 
