@@ -52,8 +52,8 @@ https://www.kaggle.com/datasets/harishkumardatalab/food-image-classification-dat
 
 kaggle의 Food Image Classification Dataset[[1]](#블로그blog)을 이용하였다. 24k개의 이미지들로 이루어져 있으며, 사진과 같이 34개 종류의 다양한 나라의 음식들으로 이루어져 있다.
 
-### (class) 
-> **Baked Potato**, **Crispy Chicken**, **Donut**, **Fries**, **Hot     Dog**, **Sandwich**, **Taco**, **Taquito**, **apple_pie**, **buger**, **butter_naan**, **chai**, **chapati**, **cheesecake**, **chicken_curry**, **chole-bhature**, **dal_makhani**, **dhokla**, **fried_rice**, **ice_cream**, **idli**, **jalebi**, **kaathi_rolls**, **kadai_paneer**, **kulfi**, **masala_dosa**, **momos**, **omelette**, **paani_puri**, **pakode**, **pav_bhaji**, **pizza**, **samosa**, **shushi**
+### CLASS 
+> Icecream, Burger, Butter Naan, Taquito, Paani Puri, Fries, Hot Dog, Chapati, Dhokla, Kulfi, Pav Bhaji, Crispy Chicken, Donut, Fried Rice, Pizza, Jalebi, Chicken Curry, Taco, Pakode, Dal Makhani, Cheesecake, Sushi, Idli, Kadai Paneer, Chole Bhature, Kaathi Rolls, Baked Potato, Momos, Samosa, Sandwich, Apple Pie, Masala Dosa, Omelette, Chai
 
 
 <center><img width="100%" alt="image" src="./images/Dataset/imgs.png"></center>  <br>
